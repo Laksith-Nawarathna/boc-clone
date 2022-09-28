@@ -440,3 +440,67 @@ main>.row:first-child>.container>.col:first-child>ul li .country-code{
     text-align: center;
     margin-top: 7px;
 }
+
+main>.row-2>.container>.col{
+    padding-top: 20px;
+    float: left;
+    /* height: 200px; */
+}
+
+main>.row-2>.container>.col:first-child{
+    background-color: greenyellow;
+    float: left;
+    width: 75%;
+}
+
+main>.row-2>.container>.col:last-child{
+    /* background-color: orange; */
+    float: right;
+    width: 25%;
+}
+
+/* main>.row-2>.container>.col:last-child ul li a div */
+
+main>.row-2>.container>.col:last-child svg{
+    height: 30px;
+}
+
+main>.row-2>.container>.col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+
+main>.row-2>.container>.col:last-child>ul>li{
+    display: table;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ccc;
+}
+
+main>.row-2>.container>.col:last-child>ul>li:hover{
+    background-color: #525252;
+}
+
+main>.row-2>.container>.col:last-child>ul>li:hover a,
+main>.row-2>.container>.col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+}
+
+main>.row-2>.container>.col:last-child>ul>li>a{
+    display: table-row;
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+main>.row-2>.container>.col:last-child>ul>li>a>div{
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    /* border: 1px solid black; */
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+
+main>.row-2>.container>.col:last-child>ul>li>a>div:first-child{
+    width: 90%;
+}
