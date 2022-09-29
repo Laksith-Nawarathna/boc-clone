@@ -522,7 +522,7 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
 }
 
 #slider-wrapper {
-    width: 100%;
+    height: 100%;
     /*   position: relative;
     animation-name: slider-animation;
     animation-duration: 20s;
@@ -647,7 +647,7 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
 }
 
 .row-3 {
-    padding-top: 20px 0;
+    padding-top: 20px;
 }
 
 .row-3>.container>.col {
@@ -682,18 +682,33 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
     background-color: yellow;
 } */
 
-.row-3>.container>.col>.wrapper>.overlay {
+.row-3>.container>.col>.wrapper>.overlay{
+    /* visibility: hidden; */
     display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.row-3>.container>.col:hover .overlay {
+.row-3>.container>.col>.wrapper>.overlay>ul{
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+.row-3>.container>.col>.wrapper>.overlay>ul>li:hover{
+    color: #ffde00;
+    font-weight: bold;
+}
+
+.row-3>.container>.col:hover .overlay{
     display: block;
+    z-index: 1;
+    /* visibility: visible; */
 }
 
 .row-3>.container>.col:hover .topic {
@@ -713,13 +728,11 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
     text-align: center;
     background-color: #525252;
     color: white;
-    z-index: 1;
+    z-index: 2;
 }
 
 .row-3>.container>.col:hover img {
     transform: scale(1.2);
-
-
 }
 
 
@@ -728,6 +741,10 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
 
 .row-4>.container>.col {
     float: left;
+}
+
+.row-4>.container{
+    padding-top: 10px;
 }
 
 .row-4>.container>.col:first-child,
@@ -763,10 +780,10 @@ main>.row-2>.container>.col:last-child>ul>li>a>div:first-child {
     padding-top: 13px;
 }
 
-/* .row-4>.container>.col:last-child p:first-of-type{
+.row-4>.container>.col:last-child p:first-of-type{
     font-size: 1.1rem;
     padding-top: 7px;
-} */
+}
 
 .row-4>.container>.col:last-child p:last-of-type {
     font-size: 0.7rem;
