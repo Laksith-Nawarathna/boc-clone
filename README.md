@@ -61,7 +61,6 @@
 
 I have created this clone application to improve my front-end designing skills using HTML and CSS. The whole desgin layout and images are copyright to their respective owners. 
 
-This website was designed as a desktop application.
 You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
